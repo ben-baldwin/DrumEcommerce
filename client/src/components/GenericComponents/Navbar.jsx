@@ -7,8 +7,8 @@ import CompanyLogo from './CompanyLogo'
 
 const Navbar = () => {
     return (
-        <div className=' w-full text-white bg-stone-800'>
-            <div className=' mx-auto max-w-screen-xl w-full flex justify-center sm:justify-between items-center py-2 px-4  text-white bg-stone-800 font-body flex-wrap'>
+        <div className=' w-full text-white bg-gradient-to-br from-slate-700 via-slate-700 to-cyan-900'>
+            <div className=' mx-auto max-w-screen-xl w-full flex justify-center sm:justify-between items-center py-2 px-4  text-white bg-opacity-100 font-body flex-wrap'>
 
                 {/*----------- Company Logo ------------ */}
                 <CompanyLogo linkRoute='/' />
@@ -20,7 +20,7 @@ const Navbar = () => {
 
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button>
+                            <Menu.Button className="hover:text-slate-400">
                                 Bikes
                             </Menu.Button>
                             <Transition
@@ -84,7 +84,7 @@ const Navbar = () => {
 
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button>
+                            <Menu.Button className="hover:text-slate-400">
                                 Components
                             </Menu.Button>
                             <Transition
@@ -168,7 +168,7 @@ const Navbar = () => {
 
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button>
+                            <Menu.Button className="hover:text-slate-400">
                                 Accessories
                             </Menu.Button>
                             <Transition
@@ -182,7 +182,7 @@ const Navbar = () => {
                             >
                                 <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-lg  focus:outline-none">
                                     <div className='py-1'>
-                                        <Menu.Item>
+                                        <Menu.Item >
                                             {({ active }) => (
                                                 <a
                                                     href="/products/subcategory/bags"
@@ -228,7 +228,7 @@ const Navbar = () => {
                         </Menu>
                     </li>
                     <li>
-                        <a href='/cart'><FaShoppingCart size="1.2em" /></a>
+                        <a href='/cart' className="hover:text-slate-400"><FaShoppingCart size="1.2em" /></a>
                     </li>
                 </ul>
             </div>

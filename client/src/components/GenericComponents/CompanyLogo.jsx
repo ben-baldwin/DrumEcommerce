@@ -1,9 +1,9 @@
 import React from 'react'
-import { FaMountain } from 'react-icons/fa'
+import { FaDrum } from 'react-icons/fa'
 
 const CompanyLogo = ({linkRoute}) => {
   return (
-    <a href={linkRoute} className='text-2xl font-bold bg-white rounded-full border-slate-300 border-8 px-2 text-stone-800 min-w-max' > Mountain <FaMountain className='mb-1' style={{display:"inline-block"}} /> Bikes</a>
+    <a href={linkRoute} className='text-2xl font-bold px-2 min-w-max hover:text-slate-400' > Percussion <FaDrum className='mb-1' style={{display:"inline-block"}} /> Pro</a>
   )
 }
 
