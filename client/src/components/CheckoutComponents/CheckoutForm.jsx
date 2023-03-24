@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import CheckoutNav from './CheckoutNav';
 import BillingInfo from './BillingInfo';
 import ShippingAddressForm from './ShippingAddressForm';
-import RedButton from '../GenericComponents/RedButton';
+import RedButton from '../GenericComponents/Button';
 import { DeliveryMethod } from './DeliveryMethod';
 import CreditCardForm from './CreditCardForm';
 import CheckoutOrderSummary from './CheckoutOrderSummary';

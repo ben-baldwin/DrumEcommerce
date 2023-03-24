@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ItemCard from '../ProductComponents/ItemCard'
-import RedButton from '../GenericComponents/RedButton'
+import RedButton from '../GenericComponents/Button'
 
 
 const OrderSummary = ({ cart }) => {

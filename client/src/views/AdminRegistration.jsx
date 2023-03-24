@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import AdminNavBar from '../components/AdminComponents/AdminNavBar'
 import CheckoutNav from '../components/CheckoutComponents/CheckoutNav'
-import RedButton from '../components/GenericComponents/RedButton'
+import RedButton from '../components/GenericComponents/Button'
 import { useNavigate } from 'react-router-dom'
 
 const AdminRegistration = () => {

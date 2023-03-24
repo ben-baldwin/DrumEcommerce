@@ -1,6 +1,6 @@
 import React from 'react'
 import GrayButton from '../GenericComponents/GrayButton'
-import RedButton from '../GenericComponents/RedButton'
+import RedButton from '../GenericComponents/Button'
 import { FaSearch } from 'react-icons/fa'
 import axios from 'axios'
 
