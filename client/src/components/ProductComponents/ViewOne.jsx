@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, useNavigate } from "react-router-dom";
 import ProductDescription from "./ProductDescription";
-import RedButton from "../GenericComponents/RedButton";
+import RedButton from "../GenericComponents/Button";
 
 const ViewOne = ({ cart, setCart }) => {
   const { id } = useParams();

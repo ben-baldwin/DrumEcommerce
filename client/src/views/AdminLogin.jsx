@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import CheckoutNav from '../components/CheckoutComponents/CheckoutNav'
-import RedButton from '../components/GenericComponents/RedButton'
+import RedButton from '../components/GenericComponents/Button'
 import { useNavigate } from 'react-router-dom'
 
 const AdminLogin = () => {
