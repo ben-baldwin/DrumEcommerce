@@ -8,6 +8,7 @@ import Checkout from './views/Checkout';
 import AdminLogin from './views/AdminLogin';
 import AdminOrders from './views/AdminOrders';
 import AdminProducts from './views/AdminProducts';
+import AdminRegistration from './views/AdminRegistration'
 import ProductCreateOne from './views/ProductCreateOne';
 import ProductEdit from './views/ProductEdit'
 import FilteredProductsList from './views/FilteredProductsList';
@@ -48,6 +49,7 @@ function App() {
         <Route element={<ProtectedRoute element={AdminProducts}/>} path='/dashboard/products'/>
         <Route element={<ProtectedRoute element={AdminViewOneProduct}/>} path='/products/show/:id'/>
         <Route element={<ProtectedRoute element={AdminViewOneOrder}/>} path='/orders/show/:id'/>
+        <Route element={<ProtectedRoute element={AdminRegistration}/>} path='/admin/registration'/>
         <Route element={<ProtectedRoute element={ProductCreateOne}/>} path='/products/create' />
         <Route element={<ProtectedRoute element={ProductEdit}/>} path='/products/:id/edit' />
       </Routes>
