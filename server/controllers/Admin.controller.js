@@ -39,8 +39,6 @@ module.exports.createNewAdmin = async (req, res) => {
 
 // variable = function for login
 module.exports.adminLogin = async (req, res) => {
-  console.log("1");
-  console.log(req.body);
   // takes request = email + password
   const { email, password } = req.body;
   try {
