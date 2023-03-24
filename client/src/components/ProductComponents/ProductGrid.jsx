@@ -20,12 +20,12 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
   }
   return (
     // Body
-    <div className="bg-gradient-to-br from-slate-50 to-stone-300 min-h-screen">
+    <div className="bg-gradient-to-r from-neutral-100 to-stone-200 min-h-screen">
       <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-3 gap-10 p-4 ">
         <ProductFilters />
         {/* ------------Loop through all products-------------- */}
         {loaded ? allProducts.map((product, key) =>
-          <div className="bg-white flex flex-col justify-between items-center rounded shadow p-4" key={key}>
+          <div className="bg-white flex flex-col justify-between items-center rounded shadow-2xl p-4" key={key}>
             <div className="w-full relative pb-[56.25%]">
               <img className="w-full h-full absolute object-cover" src={product.image.location} alt={product.name} />
             </div>
