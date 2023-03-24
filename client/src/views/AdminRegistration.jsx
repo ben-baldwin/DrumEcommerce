@@ -64,7 +64,7 @@ const AdminRegistration = () => {
             <p className='text-md font-semibold mb-2 uppercase'>Confirm Password</p>
             <input onChange={handleChange} type="password" name="confirmPassword" className=' w-full p-3 border' />
           </div>
-          <RedButton buttonText="Login" />
+          <RedButton buttonText="Register" />
         </form>
       </div>
     </div>
