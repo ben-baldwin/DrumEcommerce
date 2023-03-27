@@ -13,7 +13,7 @@ const ProductEdit = () => {
     name: "",
     brand: "",
     description: "",
-    mainCategory: "bikes",
+    mainCategory: "drums",
     subCategory: "",
     price: 0.0,
     quantity: 0,

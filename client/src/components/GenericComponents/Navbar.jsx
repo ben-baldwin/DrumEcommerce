@@ -16,12 +16,12 @@ const Navbar = () => {
 
                 <ul className='flex items-center '>
 
-                    {/* ------------- Bikes Menu ------------- */}
+                    {/* ------------- Drums Menu ------------- */}
 
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
                             <Menu.Button className="hover:text-slate-400">
-                                Bikes
+                                Drums
                             </Menu.Button>
                             <Transition
                                 as={Fragment}
@@ -37,40 +37,30 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/trail"
+                                                    href="/products/subcategory/acoustic"
                                                     className={`block px-4 py-2 text-sm ${active ? "bg-gray-100 text-gray-900" : "text-gray-700"}`}
                                                 >
-                                                    Trail
+                                                    Acoustic
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/allmountain"
+                                                    href="/products/subcategory/electric"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    All Mountain
+                                                    Electric
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/enduro"
+                                                    href="/products/subcategory/snares"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Enduro
-                                                </a>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <a
-                                                    href="/products/subcategory/downhill"
-                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
-                                                >
-                                                    Downhill
+                                                    Snares
                                                 </a>
                                             )}
                                         </Menu.Item>
@@ -80,12 +70,12 @@ const Navbar = () => {
                         </Menu>
                     </li>
 
-                    {/* --------------Components Menu --------------- */}
+                    {/* --------------Cymbals Menu --------------- */}
 
                     <li className='p-4 text-white'>
                         <Menu as="div" className="relative inline-block text-left">
                             <Menu.Button className="hover:text-slate-400">
-                                Components
+                                Cymbals
                             </Menu.Button>
                             <Transition
                                 as={Fragment}
@@ -101,60 +91,40 @@ const Navbar = () => {
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/drivetrain"
+                                                    href="/products/subcategory/crashCymbals"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Drivetrain
+                                                    Crash Cymbals
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/suspension"
+                                                    href="/products/subcategory/rideCymbals"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Suspension
+                                                    Ride Cymbals
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/brakes"
+                                                    href="/products/subcategory/hiHats"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Brakes
+                                                    Hi-Hats
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/saddles"
+                                                    href="/products/subcategory/splashCymbals"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Saddles
-                                                </a>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <a
-                                                    href="/products/subcategory/tires"
-                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
-                                                >
-                                                    Tires
-                                                </a>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <a
-                                                    href="/products/subcategory/wheels"
-                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
-                                                >
-                                                    Wheels
+                                                    Splash Cymbals
                                                 </a>
                                             )}
                                         </Menu.Item>
@@ -185,40 +155,30 @@ const Navbar = () => {
                                         <Menu.Item >
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/bags"
+                                                    href="/products/subcategory/pedals"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Bags
+                                                    Pedals
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/tools"
+                                                    href="/products/subcategory/thrones"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Tools
+                                                    Thrones
                                                 </a>
                                             )}
                                         </Menu.Item>
                                         <Menu.Item>
                                             {({ active }) => (
                                                 <a
-                                                    href="/products/subcategory/hydration"
+                                                    href="/products/subcategory/drumSticks"
                                                     className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
                                                 >
-                                                    Hydration
-                                                </a>
-                                            )}
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            {({ active }) => (
-                                                <a
-                                                    href="/products/subcategory/racks"
-                                                    className={`block px-4 py-2 text-sm ${active ? 'bg-gray-100 text-gray-900' : 'text-gray-700'}`}
-                                                >
-                                                    Racks
+                                                    Drum Sticks
                                                 </a>
                                             )}
                                         </Menu.Item>

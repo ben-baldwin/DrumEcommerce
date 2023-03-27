@@ -36,7 +36,7 @@ function App() {
     <div className="h-full">
       <Routes>
         <Route element={<ViewAllProducts />} path='/' />
-        <Route element={<ViewAllProducts />} path='/bikes/:type' />
+        <Route element={<ViewAllProducts />} path='/drums/:type' />
         <Route element={<FilteredProductsList />} path='/products/:type/:name' />
         <Route element={<ProductDetails cart={cart} setCart={setCart} />} path='/products/:id' />
         <Route element={<Cart cart={cart} setCart={setCart} />} path='/cart' />

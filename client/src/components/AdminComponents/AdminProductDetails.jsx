@@ -55,7 +55,7 @@ const AdminProductDetails = () => {
             <img
               src="https://jnsn.imgix.net/globalassets/product-images---all-assets/yeti-2021/bi002905-turquoise.jpg?w=1000&auto=format&q=70&fit=max"
               className=""
-              alt="bike"
+              alt="drum"
             />
           </div>
 
