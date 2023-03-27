@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 
 const OrdersTable = ({search, searchTerm, setSearchTerm, clearCart, loaded, allOrders, onStatusUpdate, deleteOrder}) => {
   return (
-    <div className="max-w-screen-xl mx-auto ">
+    <div className="max-w-screen-xl mx-auto mb-4">
           <div className="flex items-center justify-between pb-4">
             <form onSubmit={search} className="p-0">
               <input type="search" value={searchTerm} onChange={e => {setSearchTerm(e.target.value)}} name="search" className="p-2 border" />

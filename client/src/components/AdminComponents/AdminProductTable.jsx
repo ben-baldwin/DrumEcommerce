@@ -21,8 +21,13 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
       const pageNumber = i;
       links.push(
         pageNumber === page ?
-        <p className="text-xl underline text-slate-500 cursor-pointer" key={i} onClick={() => setPage(pageNumber)}>{i}</p>
-        : <p className="text-xl underline text-blue-700 cursor-pointer" key={i} onClick={() => setPage(pageNumber)}>{i}</p>
+        <div className="border-2 bg-slate-300 border-slate-400 shadow-xl w-7 h-7 flex justify-center items-center">
+            <p className="text-xl underline text-slate-500 cursor-pointer" key={i} onClick={() => setPage(pageNumber)}>{i}</p>
+          </div>
+          :
+          <div className="border-2 bg-slate-100 border-slate-400 shadow-xl w-7 h-7 flex justify-center items-center">
+            <p className="text-xl text-blue-700 cursor-pointer" key={i} onClick={() => setPage(pageNumber)}>{i}</p>
+          </div>
       )
       i++
     }
@@ -38,7 +43,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
 
   return (
     <div className='bg-gradient-to-br from-slate-50 to-stone-300 h-screen p-4'>
-      <div className='max-w-screen-xl mx-auto '>
+      <div className='max-w-screen-xl mx-auto mb-4 '>
 
         <div className='flex items-center justify-between pb-4'>
           <form onSubmit={search} className='p-0'>
