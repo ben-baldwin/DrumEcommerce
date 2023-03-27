@@ -82,8 +82,8 @@ const ProductForm = ({ title, subTitle, buttonText, submitFunction, productInfo,
                     <div className='mb-6 w-full'>
                         <p className='text-md font-semibold mb-2 uppercase' >Main Category</p>
                         <select onChange={changeHandler} name="mainCategory" value={productInfo.mainCategory} className=' w-full p-3 border' >
-                            <option value="bikes">Bikes</option>
-                            <option value="components">Components</option>
+                            <option value="drums">Drums</option>
+                            <option value="cymbals">Cymbals</option>
                             <option value="accessories">Accessories</option>
                         </select>
                     </div>

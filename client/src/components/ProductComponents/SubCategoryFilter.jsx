@@ -1,38 +1,36 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 
-const SubCategoryFilter = ({changeHandler, productInfo}) => {
+const SubCategoryFilter = ({ changeHandler, productInfo }) => {
 
-    
-      if (productInfo.mainCategory === "bikes") {
-          return (
-              <select onChange={ changeHandler } name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
-                  <option value="trail">Trail</option>
-                  <option value="allmountain">All Mountain</option>
-                  <option value="enduro">Enduro</option>
-                  <option value="downhill">Downhill</option>
-              </select>
-          )
-      }
-      if (productInfo.mainCategory === "components") {
-          return (
-              <select onChange={ changeHandler } name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
-                  <option value="drivetrain">Drivetrain</option>
-                  <option value="suspension">Suspension</option>
-                  <option value="brakes">Brakes</option>
-                  <option value="tires">Tires</option>
-                  <option value="wheels">Wheels</option>
-              </select>
-          )
-      }
-      if (productInfo.mainCategory === "accessories") {
-          return (
-              <select onChange={ changeHandler } name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
-                  <option value="bags">Bags</option>
-                  <option value="tools">Tools</option>
-                  <option value="hydration">Hydration</option>
-              </select>
-          )
-      }
-  }
+
+    if (productInfo.mainCategory === "drums") {
+        return (
+            <select onChange={changeHandler} name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
+                <option value="acoustic">Acoustic</option>
+                <option value="electric">Electric</option>
+                <option value="snares">Snares</option>
+            </select>
+        )
+    }
+    if (productInfo.mainCategory === "cymbals") {
+        return (
+            <select onChange={changeHandler} name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
+                <option value="crashCymbals">Crash Cymbals</option>
+                <option value="rideCymbals">Ride Cymbals</option>
+                <option value="hiHats">Hi-Hats</option>
+                <option value="splashCymbals">Splash Cymbals</option>
+            </select>
+        )
+    }
+    if (productInfo.mainCategory === "accessories") {
+        return (
+            <select onChange={changeHandler} name="subCategory" value={productInfo.subCategory} className=' w-full p-3 border' >
+                <option value="pedals">Pedals</option>
+                <option value="thrones">Thrones</option>
+                <option value="drumSticks">Drum Sticks</option>
+            </select>
+        )
+    }
+}
 
 export default SubCategoryFilter

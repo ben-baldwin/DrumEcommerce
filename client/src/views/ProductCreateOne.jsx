@@ -11,7 +11,7 @@ const ProductCreateOne = () => {
     name: "",
     brand: "",
     description: "",
-    mainCategory: "bikes",
+    mainCategory: "drums",
     subCategory: "",
     price: '0.00',
     quantity: 0,

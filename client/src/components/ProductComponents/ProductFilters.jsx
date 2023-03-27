@@ -15,50 +15,42 @@ const ProductFilters = () => {
   };
   const categories = [
     {
-      name: "bikes",
-      text: "Bikes",
+      name: "drums",
+      text: "Drums",
       subcategory: [
         {
-          name: "trail",
-          text: "Trail",
+          name: "acoustic",
+          text: "Acoustic",
         },
         {
-          name: "allMountain",
-          text: "All Mountain",
+          name: "electric",
+          text: "Electric",
         },
         {
-          name: "enduro",
-          text: "Enduro",
-        },
-        {
-          name: "downhill",
-          text: "Downhill",
+          name: "snares",
+          text: "Snares",
         },
       ],
     },
     {
-      name: "components",
-      text: "Components",
+      name: "cymbals",
+      text: "Cymbals",
       subcategory: [
         {
-          name: "drivetrain",
-          text: "Drivetrain",
+          name: "crashCymbals",
+          text: "Crash Cymbals",
         },
         {
-          name: "suspension",
-          text: "Suspension",
+          name: "rideCymbals",
+          text: "Ride Cymbals",
         },
         {
-          name: "brakes",
-          text: "Brakes",
+          name: "hiHats",
+          text: "Hi-Hats",
         },
         {
-          name: "tires",
-          text: "Tires",
-        },
-        {
-          name: "wheels",
-          text: "Wheels",
+          name: "splashCymbals",
+          text: "Splash Cymbals",
         },
       ],
     },
@@ -67,16 +59,16 @@ const ProductFilters = () => {
       text: "Accessories",
       subcategory: [
         {
-          name: "bags",
-          text: "Bags",
+          name: "pedals",
+          text: "Pedals",
         },
         {
-          name: "tools",
-          text: "Tools",
+          name: "thrones",
+          text: "Thrones",
         },
         {
-          name: "hydration",
-          text: "Hydration",
+          name: "drumSticks",
+          text: "Drum Sticks",
         },
       ],
     },
