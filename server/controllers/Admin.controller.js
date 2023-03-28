@@ -30,7 +30,7 @@ module.exports.createNewAdmin = async (req, res) => {
     const adminToken = jwt.sign(payload, process.env.ADMIN_LOGIN_REG_SECRET_KEY)
     console.log(adminToken);
     res
-      .cookie("adminToken", adminToken, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
+      .cookie("adminToken", adminToken, { domain: '54.237.72.244' })
       .json({ msg: "success!", admin: admin });
   } catch (err) {
     res.json(err)
