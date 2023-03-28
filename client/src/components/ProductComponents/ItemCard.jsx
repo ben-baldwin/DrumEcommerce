@@ -94,7 +94,7 @@ const ItemCard = ({
                 </form>
               </div>
               <form onSubmit={(e) => removeItem(e, id)}>
-                <button>Remove</button>
+                <button className="hover:text-red-500">Remove</button>
               </form>
             </div>
             <p className="text-lg my-4 font-bold">
