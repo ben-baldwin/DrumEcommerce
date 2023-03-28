@@ -31,19 +31,19 @@ const AdminNavBar = () => {
 
           {/* -------------- Orders Link --------------- */}
 
-          <li className='py-4 text-white'>
+          <li className='py-4 text-white hover:text-slate-400'>
             <a href="/dashboard/orders">Orders</a>
           </li>
 
           {/* ----------- Products Link -------------- */}
 
-          <li className='py-4 text-white'>
+          <li className='py-4 text-white hover:text-slate-400'>
             <a href="/dashboard/products">Products</a>
           </li>
 
           {/* ------------- Logout Link ------------- */}
 
-          <li className='py-4 text-white'>
+          <li className='py-4 text-white hover:text-slate-400'>
             <p className='cursor-pointer' onClick={logout}>Logout</p>
           </li>
 
