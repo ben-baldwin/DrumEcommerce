@@ -97,20 +97,27 @@ const ViewOne = ({ cart, setCart }) => {
 
             {/* Color Picker */}
             <form onSubmit={addProduct}>
-              <p className="font-semibold">Color:</p>
               <div className="flex">
-                <div className="h-14 w-14 m-2 border-2 " style={{ backgroundColor: productInfo.color }}></div>
-              </div>
+                <div>
+                  <p className="font-semibold">Color:</p>
+                  <div className="h-14 w-14 m-2 border-2 " style={{ backgroundColor: productInfo.color }}></div>
+                </div>
 
-              {/*  Size */}
-              <p className="font-semibold">Size:</p>
-              <div className="flex">
-                <div className="h-14 w-14 m-2 border-2 flex justify-center items-center p-6">{productInfo.size}</div>
-              </div>
+                {/*  Size */}
+                <div>
+                  <p className="font-semibold">Size:</p>
+                  <div className="flex">
+                    <div className="h-14 w-14 m-2 border-2 flex justify-center items-center p-6">{productInfo.size}</div>
+                  </div>
+                </div>
 
-              <p className="font-semibold">Quantity:</p>
-              <div className="flex mb-4">
-                <input onChange={e => setQuantity(e.target.value)} type="number" value={quantity} className="font-semibold h-14 w-14 m-2 border-2 pl-4 py-6"></input>
+                {/* Quantity */}
+                <div>
+                  <p className="font-semibold">Quantity:</p>
+                  <div className="flex mb-4">
+                    <input onChange={e => setQuantity(e.target.value)} type="number" value={quantity} className="font-semibold h-14 w-14 m-2 border-2 pl-4 py-6"></input>
+                  </div>
+                </div>
               </div>
               <RedButton buttonText="Add to Cart" />
             </form>
