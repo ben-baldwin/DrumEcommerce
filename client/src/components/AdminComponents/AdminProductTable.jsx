@@ -60,7 +60,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
           <thead>
             <tr className='bg-slate-300'>
               {tableHeadings.map((headings) =>
-                <th className='text-lg font-normal py-4 px-5 uppercase text-left '>{headings}</th>
+                <th className='text-2xl font-normal py-4 px-5 uppercase text-left '>{headings}</th>
               )}
             </tr>
           </thead>
@@ -73,9 +73,11 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
                       <img src={product.image.location} alt={product.name} />
                     </td>
                     <td className='text-base py-4 px-5 underline text-blue-700 '>
-                      <a href={'/products/show/' + product._id}>{product._id}</a>
+                      <a href={'/products/show/' + product._id}>{product._id}
+                      {product._id.substring(0,1) + '...'}
+                      </a>
                     </td>
-                    <td className='text-base py-4 px-5 truncate '>{product.name}</td>
+                    <td className='text-base py-4 px-5 w-32 overflow-ellipsis '>{product.name}</td>
                     <td className='text-base py-4 px-5 truncate '>{product.brand}</td>
                     <td className='text-base py-4 px-5'>{Number(product.price.$numberDecimal).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
                     <td className='text-base py-4 px-5'>{product.mainCategory}</td>
