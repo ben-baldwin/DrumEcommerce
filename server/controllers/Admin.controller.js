@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 
 
 // Read All
-module.exports.getAllAdmins = (res) => {
+module.exports.getAllAdmins = (req, res) => {
   Admins.find()
     .then(allAdmins => res.json({ admins: allAdmins }))
     .catch(err => res.json({ message: 'Something went wrong', error: err }));
@@ -67,7 +67,7 @@ module.exports.adminLogin = async (req, res) => {
     const adminToken = jwt.sign(payload, process.env.ADMIN_LOGIN_REG_SECRET_KEY)
 
     res
-      .cookie("adminToken", adminToken, { httpOnly: true, sameSite: 'strict', secure: true })
+      .cookie("adminToken", adminToken, { domain: '54.237.72.244' })
       .json({ msg: "login succesful" })
   } catch (err) {
     console.log(err);

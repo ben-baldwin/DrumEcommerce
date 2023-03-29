@@ -26,11 +26,11 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
   return (
     // Body
     <div className="bg-gradient-to-r from-gray-100 via-stone-300 to-gray-100 min-h-screen">
-      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-3 gap-10 p-4 ">
+      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 grid-rows-3 gap-10 p-4 ">
         <ProductFilters />
         {/* ------------Loop through all products-------------- */}
         {loaded ? allProducts.map((product, key) =>
-          <div className="bg-white flex flex-col justify-between items-center rounded shadow-2xl p-4" key={key}>
+          <div className="bg-white flex flex-col justify-between items-center rounded shadow-2xl p-4 lg:col-span-3" key={key}>
             <div className="w-full relative pb-[56.25%]">
               <img className="w-full h-full absolute object-cover" src={product.image.location} alt={product.name} />
             </div>
