@@ -75,7 +75,7 @@ const ProductFilters = () => {
   ];
 
   return (
-    <div className="bg-white rounded shadow-2xl row-span-full">
+    <div className="bg-white rounded shadow-2xl row-span-full hidden md:block lg:col-span-2">
       <div>
         {categories.map((category) => (
           <React.Fragment>
