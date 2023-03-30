@@ -10,7 +10,7 @@ const ProductSchema = new mongoose.Schema(
         brand: {
             type: String,
             required: [true, 'Brand is required.'],
-            minLength: [3, 'Brand must be at least {MINLENGTH} characters.']
+            minLength: [2, 'Brand must be at least {MINLENGTH} characters.']
         },
         description: {
             type: String,

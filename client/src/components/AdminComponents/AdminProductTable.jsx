@@ -77,7 +77,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
                       {product._id.substring(0,1) + '...'}
                       </a>
                     </td>
-                    <td className='text-base py-4 px-5 w-32 overflow-ellipsis '>{product.name}</td>
+                    <td className='text-base py-4 px-5 w-32'>{product.name}</td>
                     <td className='text-base py-4 px-5 truncate '>{product.brand}</td>
                     <td className='text-base py-4 px-5'>{Number(product.price.$numberDecimal).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
                     <td className='text-base py-4 px-5'>{product.mainCategory}</td>

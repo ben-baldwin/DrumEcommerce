@@ -91,9 +91,9 @@ const ViewOne = ({ cart, setCart }) => {
           </div>
           {/* ------------- Summary --------------- */}
           <div className="bg-white flex flex-col  p-8">
-            <p className="text-2xl my-4">{productInfo.brand}</p>
-            <h2 className="text-3xl font-bold uppercase">{productInfo.name}</h2>
-            <p className="text-xl my-4">${productInfo.price}</p>
+            <p className="text-2xl text-gray-700 my-4">{productInfo.brand}</p>
+            <h2 className="text-3xl text-gray-700 font-bold uppercase">{productInfo.name}</h2>
+            <p className="text-2xl font-bold text-slate-700 my-4">${productInfo.price}</p>
 
             {/* Color Picker */}
             <form onSubmit={addProduct}>
@@ -125,8 +125,8 @@ const ViewOne = ({ cart, setCart }) => {
 
           {/* ------------ Description -------------- */}
           <div className="bg-white col-span-1 sm:col-span-3 p-8 lg:col-span-4 ">
-            <h2 className="text-3xl font-semibold my-4 uppercase">{productInfo.name}</h2>
-            <p className="text-xl font-semibold mb-1">Description:</p>
+            <h2 className="text-3xl text-gray-700 font-semibold my-4 uppercase">{productInfo.name}</h2>
+            <p className="text-xl text-gray-700 font-semibold mb-1">Description:</p>
             <ProductDescription description={productInfo.description} />
           </div>
         </div>
