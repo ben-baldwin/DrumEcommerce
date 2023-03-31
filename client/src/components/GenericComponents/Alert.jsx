@@ -17,6 +17,7 @@ const Alert = ({ alertMessages }) => {
           {/* <button onClick={handleCloseAlert}>Close</button> */}
         </div>
       ) : null}
+      
     </>
   );
 };
