@@ -1,7 +1,5 @@
 const multer  = require('multer')
-const {
-  S3
-} = require("@aws-sdk/client-s3");
+const { S3 } = require("@aws-sdk/client-s3");
 const multerS3 = require('multer-s3');
 
 const myBucket = process.env.MY_S3_BUCKET_NAME
