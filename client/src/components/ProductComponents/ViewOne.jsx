@@ -90,7 +90,7 @@ const ViewOne = ({ cart, setCart }) => {
           {/* -------- Product Image -------- */}
           <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center px-8 ">
             <div className="w-full relative pb-[56.25%]">
-              <img className="w-full h-full absolute object-cover" src={`https://dszcnrj3s1kgi.cloudfront.net/${productInfo.image.key}`} alt="drum" />
+              <img className="w-full h-full absolute object-scale-down" src={`https://dszcnrj3s1kgi.cloudfront.net/${productInfo.image.key}`} alt="drum" />
             </div>
           </div>
           {/* ------------- Summary --------------- */}
