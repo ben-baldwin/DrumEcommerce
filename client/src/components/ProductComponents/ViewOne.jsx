@@ -78,6 +78,10 @@ const ViewOne = ({ cart, setCart }) => {
       .catch(err => console.log(err));
   }, [id]);
 
+  useEffect(() => {
+    console.log(productInfo);
+  }, [loaded])
+
   return (
     // Body
     <div className="bg-gradient-to-br from-slate-50 to-stone-300 p-2 min-h-screen ">
@@ -86,7 +90,7 @@ const ViewOne = ({ cart, setCart }) => {
           {/* -------- Product Image -------- */}
           <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center px-8 ">
             <div className="w-full relative pb-[56.25%]">
-              <img className="w-full h-full absolute object-cover" src={productInfo.image.location} alt="drum" />
+              <img className="w-full h-full absolute object-cover" src={`https://dszcnrj3s1kgi.cloudfront.net/${productInfo.image.key}`} alt="drum" />
             </div>
           </div>
           {/* ------------- Summary --------------- */}
