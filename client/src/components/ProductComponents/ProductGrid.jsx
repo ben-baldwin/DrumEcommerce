@@ -32,7 +32,7 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
         {loaded ? allProducts.map((product, key) =>
           <div className="bg-white flex flex-col justify-between items-center rounded shadow-2xl p-4 lg:col-span-3" key={key}>
             <div className="w-full relative pb-[56.25%]">
-              <img className="w-full h-full absolute object-cover" src={`https://dszcnrj3s1kgi.cloudfront.net/${product.image.key}`} alt={product.name} />
+              <img className="w-full h-full absolute object-scale-down" src={product.image.location} alt={product.name} />
             </div>
             <p className="text-center my-4">{product.brand} {product.name}</p>
             <p className="text-center my-4">{Number(product.price.$numberDecimal).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</p>
