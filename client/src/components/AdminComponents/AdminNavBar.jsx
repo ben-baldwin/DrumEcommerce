@@ -19,7 +19,7 @@ const AdminNavBar = () => {
   }
 
   return (
-    <div className=' w-full text-white bg-gradient-to-r from-slate-700 via-slate-800 to bg-slate-900'>
+    <div className='w-full text-white bg-gradient-to-r from-slate-700 via-slate-800 to bg-slate-900'>
       <div className=' mx-auto max-w-screen-xl w-full flex justify-center sm:justify-between items-center py-2 px-4  text-white font-body flex-wrap'>
 
         {/*----------- Company Logo ------------ */}

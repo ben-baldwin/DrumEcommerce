@@ -58,7 +58,10 @@ const ProductSchema = new mongoose.Schema(
             required: [true, 'Size is required.'],
             minLength: [1, 'Size must be at least {MINLENGTH} characters.']
         },
-        image: {}
+        image: {
+            type: Object,
+            required: [true, 'image is required.']
+        }
     },
     { timestamps: true });
 
