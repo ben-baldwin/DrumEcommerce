@@ -26,7 +26,7 @@ const ProductGrid = ({ allProducts, loaded, page, setPage, totalPages }) => {
   return (
     // Body
     <div className="bg-gradient-to-r from-gray-100 via-stone-300 to-gray-100 min-h-screen">
-      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 grid-rows-3 gap-10 p-4 ">
+      <div className="max-w-screen-xl mx-auto grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-11 grid-rows-3 gap-8 p-4 ">
         <ProductFilters />
         {/* ------------Loop through all products-------------- */}
         {loaded ? allProducts.map((product, key) =>

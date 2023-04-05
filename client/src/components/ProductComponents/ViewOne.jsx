@@ -88,7 +88,7 @@ const ViewOne = ({ cart, setCart }) => {
       {loaded ? (
         <div className="max-w-screen-xl mx-auto grid  sm:grid-cols-3 lg:grid-cols-4 rounded shadow ">
           {/* -------- Product Image -------- */}
-          <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center px-8 ">
+          <div className="bg-white col-span-1 sm:col-span-2 lg:col-span-3 items-center py-2">
             <div className="w-full relative pb-[56.25%]">
               <img className="w-full h-full absolute object-scale-down" src={`https://dszcnrj3s1kgi.cloudfront.net/${productInfo.image.key}`} alt="drum" />
             </div>

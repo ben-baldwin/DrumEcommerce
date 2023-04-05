@@ -62,7 +62,7 @@ const ItemCard = ({
           <div className="w-72 md:w-52 lg:w-60 xl:w-72 shrink-0">
             <div className="w-full relative pb-[56.25%]">
               <img
-                className="cursor-pointer w-full h-full absolute object-cover"
+                className="cursor-pointer w-full h-full absolute object-scale-down"
                 onClick={returnToProduct}
                 src={`https://dszcnrj3s1kgi.cloudfront.net/${productInfo.image.key}`}
                 alt="cart item"

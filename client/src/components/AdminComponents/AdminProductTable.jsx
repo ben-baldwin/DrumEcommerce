@@ -34,7 +34,7 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
     return links
   };
 
-  const tableHeadings = ['Picture', 'Id', 'Name', 'Brand', 'Price', 'Category', 'Sub-Category', 'Action']
+  const tableHeadings = ['Picture', 'Name', 'Brand', 'Price', 'Category', 'Sub-Category', 'Action']
 
   const searchChange = (e) =>{
     setSearchTerm(e.target.value)
@@ -73,11 +73,8 @@ const AdminProductTable = ({ allProducts, removeFromDom, search, searchTerm, set
                       <img src={`https://dszcnrj3s1kgi.cloudfront.net/${product.image.key}`} alt={product.name} />
                     </td>
                     <td className='text-base py-4 px-5 underline text-blue-700 '>
-                      <a href={'/products/show/' + product._id}>{product._id}
-                      {product._id.substring(0,1) + '...'}
-                      </a>
+                      <a href={'/products/show/' + product._id}>{product.name}</a>
                     </td>
-                    <td className='text-base py-4 px-5 w-32'>{product.name}</td>
                     <td className='text-base py-4 px-5 truncate '>{product.brand}</td>
                     <td className='text-base py-4 px-5'>{Number(product.price.$numberDecimal).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</td>
                     <td className='text-base py-4 px-5'>{product.mainCategory}</td>
